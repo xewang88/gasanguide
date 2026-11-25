@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가이드부동산 (가산동가이드공인중개사사무소) - 가산디지털단지 지식산업센터·사무실 전문</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; line-height: 1.6; color: #333; padding-top: 72px; }
+        .navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.1); background-color: white !important; }
+        .navbar-brand { font-weight: 700; color: #0d6efd !important; font-size: 1.5rem; }
+        .hero-section { position: relative; overflow: hidden; color: white; padding: 100px 0; text-align: center; background-color: #0f172a; }
+        .hero-bg-moving { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(10, 18, 35, 0.65), rgba(10, 18, 35, 0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; z-index: 0; animation: kenBurnsCity 22s ease-in-out infinite alternate; }
+        @keyframes kenBurnsCity { 0% { transform: scale(1) translate(0, 0); } 50% { transform: scale(1.08) translate(-1.5%, -1%); } 100% { transform: scale(1.14) translate(1%, -2%); } }
+        .hero-content { position: relative; z-index: 2; }
+        .btn-call { background-color: #ffc107; color: #000; font-weight: bold; padding: 15px 30px; font-size: 1.2rem; border-radius: 50px; transition: all 0.3s; display: inline-block; text-decoration: none; }
+        .btn-call:hover { background-color: #e0a800; color: #000; transform: scale(1.05); }
+        .btn-sell { background-color: #198754; color: #fff; font-weight: bold; padding: 15px 30px; font-size: 1.2rem; border-radius: 50px; transition: all 0.3s; display: inline-block; text-decoration: none; }
+        .btn-sell:hover { background-color: #157347; color: #fff; transform: scale(1.05); }
+        .main-phone-link { display: inline-block; color: #ffffff; text-decoration: none; font-weight: 700; font-size: 1.9rem; margin-top: 20px; text-shadow: 0 2px 6px rgba(0,0,0,0.5); }
+        .main-phone-link:hover { color: #ffc107; }
+        .section-title { margin-bottom: 40px; font-weight: 700; position: relative; padding-bottom: 15px; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 50px; height: 3px; background-color: #0d6efd; }
+        .service-card { transition: all 0.3s; cursor: pointer; height: 100%; }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
+        .floating-call { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+        .floating-call a { width: 60px; height: 60px; background-color: #28a745; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+        #contact-form { background-color: #f8f9fa; padding: 40px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">가이드부동산</a>
+            <div class="ms-auto d-flex align-items-center">
+                <a href="tel:01053064642" class="btn btn-primary btn-sm d-none d-sm-block"><i class="fas fa-phone-alt me-1"></i> 직통전화: 010-5306-4642</a>
+                <a href="tel:01053064642" class="btn btn-primary btn-sm d-sm-none"><i class="fas fa-phone-alt"></i> 직통문의</a>
+            </div>
+        </div>
+    </nav>
+    <header class="hero-section">
+        <div class="hero-bg-moving"></div>
+        <div class="container hero-content">
+            <h1 class="display-4 fw-bold mb-3">찾는 사무실은 정확하게,<br>내놓는 매물은 가장 빠르게.</h1>
+            <p class="lead mb-4 px-3">가산디지털단지 지식산업센터·사무실 전문!<br>입주 조건 맞춤 추천부터 공실 걱정 없는 매물 접수까지 한 번에 해결해 드립니다.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+                <a href="#contact" class="btn-call" onclick="document.getElementById('type').value='매물찾기'"><i class="fas fa-search me-2"></i>사무실 구하기 문의</a>
+                <a href="#contact" class="btn-sell" onclick="document.getElementById('type').value='매물접수'"><i class="fas fa-hand-holding-heart me-2"></i>매물 내놓기 접수</a>
+            </div>
+            <div><a href="tel:028527119" class="main-phone-link">☎ 02-852-7119</a></div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title">주요 서비스</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm service-card d-flex flex-column justify-content-between" onclick="document.getElementById('type').value='매물접수'; location.href='#contact';">
+                        <div>
+                            <i class="fas fa-file-contract fa-3x text-primary mb-3"></i>
+                            <h4>빠른 매물 접수</h4>
+                            <p class="text-muted">소중한 자산, 가장 빠르게 거래될 수 있도록 홍보해드립니다.</p>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#contact" onclick="document.getElementById('type').value='매물접수'" class="btn btn-outline-success btn-sm px-3 py-2 fw-bold">빠른 매물 접수 하러가기 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm service-card d-flex flex-column justify-content-between" onclick="window.open('https://fin.land.naver.com/realtor/8383222', '_blank')">
+                        <div>
+                            <i class="fas fa-search-location fa-3x text-success mb-3"></i>
+                            <h4>실시간 매물 바로보기</h4>
+                            <p class="text-muted">네이버부동산에 등록된 최신 사무실·지식산업센터·상가 매물을 실시간으로 확인하세요.</p>
+                        </div>
+                        <div class="mt-3">
+                            <a href="https://fin.land.naver.com/realtor/8383222" target="_blank" class="btn btn-outline-success btn-sm px-3 py-2 fw-bold">네이버부동산 매물 보기 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded shadow-sm service-card d-flex flex-column justify-content-between" style="cursor: default;">
+                        <div>
+                            <i class="fas fa-blog fa-3x text-primary mb-3"></i>
+                            <h4 class="mb-3">매물 블로그 포스팅 보러가기</h4>
+                        </div>
+                        <div class="d-grid gap-2 mt-2">
+                            <a href="https://blog.naver.com/resj3222" target="_blank" class="btn btn-outline-success btn-sm py-2 fw-bold">지식산업센터스쿨 매물 보기 &rarr;</a>
+                            <a href="https://blog.naver.com/alfkdi1008" target="_blank" class="btn btn-outline-success btn-sm py-2 fw-bold">사무실다나와 매물 보기 &rarr;</a>
+                            <a href="https://blog.naver.com/cutieyang3" target="_blank" class="btn btn-outline-success btn-sm py-2 fw-bold">지산브리핑 매물 보기 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-5 bg-light">
+        <div class="container"><div class="row justify-content-center"><div class="col-lg-8"><div id="contact-form">
+            <h2 class="text-center mb-4 fw-bold">문의 및 매물접수</h2>
+            <form id="sms-form">
+                <div class="mb-3"><label for="name" class="form-label">성함</label><input type="text" class="form-control" id="name" name="name" required placeholder="성함을 입력해주세요"></div>
+                <div class="mb-3"><label for="phone" class="form-label">연락처</label><input type="tel" class="form-control" id="phone" name="phone" required placeholder="010-0000-0000"></div>
+                <div class="mb-3"><label for="type" class="form-label">문의 유형</label><select class="form-select" id="type" name="type"><option value="매물접수">매물 접수 (내놓기)</option><option value="매물찾기">매물 찾기 (구하기)</option><option value="단순상담">단순 상담</option></select></div>
+                <div class="mb-3"><label for="message" class="form-label">내용</label><textarea class="form-control" id="message" name="message" rows="5" placeholder="매물 위치, 면적, 희망 가격 등 상세 내용을 입력해주시면 빠른 상담이 가능합니다."></textarea></div>
+                <div class="d-grid"><button type="submit" class="btn btn-primary btn-lg">문자로 상담 신청하기</button></div>
+            </form>
+        </div></div></div></div>
+    </section>
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="section-title">찾아오시는 길</h2>
+            <div class="row justify-content-center"><div class="col-lg-10"><div class="p-4 border rounded shadow-sm bg-light">
+                <h5 class="fw-bold mb-3">서울시 금천구 가산디지털2로 123, 월드메르디앙2차 209호</h5>
+                <p class="text-muted">(가산동가이드공인중개사사무소 / 가이드부동산)</p>
+                <div class="my-4 p-3 bg-white border rounded shadow-sm">
+                    <svg viewBox="0 0 640 230" width="100%" style="max-width: 640px; height: auto; display: block; margin: 0 auto;" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="640" height="230" rx="12" fill="#f8fafc"/>
+                        <!-- 도로 라인 -->
+                        <line x1="40" y1="120" x2="600" y2="120" stroke="#cbd5e1" stroke-width="18" stroke-linecap="round"/>
+                        <line x1="40" y1="120" x2="600" y2="120" stroke="#ffffff" stroke-width="2" stroke-dasharray="10,10"/>
+                        <line x1="460" y1="30" x2="460" y2="205" stroke="#cbd5e1" stroke-width="16" stroke-linecap="round"/>
+                        <!-- 이동 경로 점선 -->
+                        <path d="M 155 120 L 460 120 L 460 72" fill="none" stroke="#198754" stroke-width="4" stroke-dasharray="7,5"/>
+                        <!-- 가산디지털단지역 -->
+                        <rect x="65" y="92" width="175" height="56" rx="10" fill="#1e293b"/>
+                        <circle cx="92" cy="112" r="9" fill="#0d6efd"/>
+                        <text x="92" y="116" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">1</text>
+                        <circle cx="114" cy="112" r="9" fill="#556b2f"/>
+                        <text x="114" y="116" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">7</text>
+                        <text x="168" y="116" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">가산디지털단지역</text>
+                        <text x="152" y="135" fill="#94a3b8" font-size="11" text-anchor="middle">8번출구를 나와 3분간 직진</text>
+                        <!-- 도로명 표기 -->
+                        <rect x="275" y="109" width="110" height="22" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+                        <text x="330" y="124" fill="#475569" font-size="11" font-weight="bold" text-anchor="middle">가산디지털2로 방면</text>
+                        <!-- 목적지: 월드메르디앙2차 209호 -->
+                        <rect x="365" y="22" width="195" height="58" rx="10" fill="#0d6efd"/>
+                        <text x="462" y="46" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">월드메르디앙2차 209호</text>
+                        <text x="462" y="66" fill="#dbeafe" font-size="11" text-anchor="middle">가이드부동산 (주차 가능)</text>
+                        <!-- 위치 핀 아이콘 -->
+                        <circle cx="460" cy="90" r="6" fill="#dc3545"/>
+                    </svg>
+                </div>
+                <div class="d-grid gap-2 col-md-8 mx-auto"><a href="https://map.naver.com/p/search/서울시 금천구 가산디지털2로 123" target="_blank" class="btn btn-success btn-lg py-3 fw-bold"><i class="fas fa-map-marked-alt me-2"></i>네이버 지도로 위치·길찾기 보기</a></div>
+            </div></div></div>
+        </div>
+    </section>
+    <footer class="py-5 bg-dark text-white">
+        <div class="container"><div class="row">
+            <div class="col-md-8 mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3 text-primary">가산동가이드공인중개사사무소 (가이드부동산)</h5>
+                <p class="mb-1 small">소재지: 서울시 금천구 가산디지털2로 123, 월드메르디앙2차 209호</p>
+                <p class="mb-1 small">연락처: <a href="tel:028527119" class="text-white text-decoration-none">02-852-7119</a> (대표전화) | <a href="tel:01053064642" class="text-white text-decoration-none">010-5306-4642</a> (직통)</p>
+                <p class="mb-1 small">상담시간: 평일 09:00 ~ 21:00 (주말·공휴일 사전 예약 상담 가능)</p><p class="mb-3 small">대표: 박정효</p>
+            </div>
+            <div class="col-md-4 text-md-end align-self-end"><p class="mb-0 small text-muted">&copy; <span id="current-year"></span> 가이드부동산. All Rights Reserved.</p></div>
+        </div></div>
+    </footer>
+    <div class="floating-call d-md-none"><a href="tel:01053064642"><i class="fas fa-phone"></i></a></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('sms-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const type = document.getElementById('type').value;
+            const message = document.getElementById('message').value;
+            const adminPhone = '01053064642';
+            const body = `[부동산 문의]\n- 성함: ${name}\n- 연락처: ${phone}\n- 유형: ${type}\n- 내용: ${message}`;
+            const encodedBody = encodeURIComponent(body);
+            const smsUrl = `sms:${adminPhone}${window.navigator.userAgent.match(/iPhone/i) ? '&' : '?'}body=${encodedBody}`;
+            location.href = smsUrl;
+        });
+    </script>
+</body>
+</html>
+
+
+
+
